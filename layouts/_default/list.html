@@ -1,0 +1,21 @@
+{{ define "main" }}
+<main>
+    <article class="article">
+        <div class="container" style="max-width: 70ch;">
+        <h1 class="title has-text-centered mt-2">{{.Title}}</h1>
+                <!-- "{{.Content}}" pulls from the markdown content of the corresponding _index.md -->
+                {{.Content}}
+            </div>
+    </article>
+    <div class="container has-text-centered">
+    <ul class="mt-3">
+    <!-- Ranges through content/posts/*.md -->
+    {{ range .Pages }}
+        <li>
+            <a class="has-text-dark" href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}}</a>
+        </li>
+    {{ end }}
+    </ul>
+</div>
+</main>
+{{ end }}

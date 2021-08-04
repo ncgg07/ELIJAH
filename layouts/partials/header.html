@@ -1,0 +1,27 @@
+<style> 
+@media (max-width: 1023px) {
+    #navbarmenu {
+      background-color:#0079c1;
+      text-align: center;
+    }
+}
+
+</style>
+
+<nav class="navbar is-link" style="color: white;"><div class="container"><div class="navbar-brand mx-auto">
+    <a class="navbar-item is-size-5 has-text-weight-bold has-text-centered" href="/" aria-label="Link to the Home Page"><img class="image" src="{{ .Site.Params.SiteLogo }}" style="max-height: 70px;" alt="IJM Logo"> </a>
+    <a class="navbar-burger has-text-white"role="button" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu" id="navbarmenu">
+    <div class="navbar-end is-align-items-center">
+      {{ range .Site.Menus.main }}
+      <a class="navbar-item has-text-light has-text-weight-bold" href="{{ .URL }}"> {{ $text := print .Name | safeHTML }}
+      {{ $text }}   </a>                 {{ end }}
+      <a class="button is-light has-text-weight-bold is-size-7" href="https://osec.ijm.org" target="_blank" rel="noreferrer" aria-label="Link to IJM OSEC Site">{{ with .Params.menuButtonText }}{{.}}{{else}}{{ .Site.Params.menuButtonText }}{{end}}</a></div>
+  </div> 
+</div>
+</nav><div class="has-background-light" style="padding-bottom: 256px;">

@@ -1,0 +1,15 @@
+baseURL = "/"
+languageCode = "en-us"
+
+
+[params]
+footerContent= "Copyright 2021 | IJM Philippines"
+menuButtonText= "Learn More"
+SiteLogo = "/IJM_Logo_Horizontal_White_ForWeb.png"
+
+
+[[menu.main]]
+Name = "About"
+url = "/about"
+
+

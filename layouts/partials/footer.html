@@ -1,0 +1,5 @@
+{{ with .Site.Params.footerContent | safeHTML }}
+<div class="footer has-text-centered">
+<p class="has-text-centered">{{ . }} </p>
+</div>
+{{ end }}

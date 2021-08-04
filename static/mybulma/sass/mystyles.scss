@@ -1,0 +1,12 @@
+@import url("/fonts/Reader-Medium.woff");
+
+$blue: #0079c1;
+$turquoise: #06a89d;
+$yellow: #ffbd73;
+$family-sans-serif: "Reader-Medium", sans-serif;
+
+$family-primary: $family-sans-serif;
+
+@charset "utf-8";
+
+@import "../bulma.sass";

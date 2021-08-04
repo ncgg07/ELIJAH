@@ -1,0 +1,37 @@
+---
+label: Index
+hide_body: false
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+  description: The Title of the Page
+- name: frontPageHeading
+  type: text
+  config:
+    required: false
+  label: Front Page Heading Text
+  description: The Main Message of the Front Page
+- name: menuButtonText
+  type: text
+  config:
+    required: false
+  label: Menu Button Text
+  description: The text for the top right button
+- name: buttonText
+  type: text
+  config:
+    required: false
+  label: Main Button Text
+  description: Text for the button in the middle of the front page
+- name: FrontPageImage
+  type: text
+  config:
+    required: false
+  label: Front Page Image
+  description: The Front Page Image
+  default: "/ijm.jpg"
+pages:
+- content/_index.md
